@@ -793,6 +793,9 @@ require('lazy').setup({
 
     -- Set a keybinding to open LazyGit
     vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { silent = true }),
+    config = function()
+      vim.g.lazygit_floating_window_winblend = 1
+    end,
   },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
